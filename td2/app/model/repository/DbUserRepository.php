@@ -39,7 +39,7 @@ public function add(UserEntity $user): ?UserEntity
     try {
         $statement = $this->connexion
         ->prepare("insert into user values(:pseudo,:password,:status)");
-        $statement->bindParam('pseudo', $id);
+        $statement->bindParam('pseudo', $pseudo);
         $statement->bindParam('password', $password);
         $statement->bindParam('status', $status);
         $statement->execute();

@@ -1,5 +1,4 @@
 <?php
-  
     if(isset($_SESSION["name"],$_SESSION["status"])){
         $p= $_SESSION["name"];
         $status = $_SESSION["status"];
